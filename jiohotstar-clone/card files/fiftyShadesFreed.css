@@ -20,6 +20,7 @@ body {
 
 .movie-container {
   width: 40%;
+  transform: translateY(-100%);
 
   margin: 150px 0px 80px 130px;
   /* background: linear-gradient(

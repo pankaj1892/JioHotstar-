@@ -4,7 +4,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   padding: 0px 0px 0px 40px;
-  z-index: 0;
+  z-index: 1;
   background-image: url(../images/background/moana_BG_image.webp);
   background-repeat: no-repeat;
   background-size: 100% 700px;
@@ -27,12 +27,12 @@ body {
     rgba(43, 39, 39, 0.9),
     rgba(114, 101, 101, 0.6)
   ); */
-  z-index: 1;
+  z-index: 3;
   border-radius: 10px;
 }
 .movie-container::before {
   content: "";
-  z-index: 0;
+  z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
@@ -43,17 +43,17 @@ body {
 
 .movie-banner img {
   width: 400px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .movie-info {
-  z-index: 1;
+  z-index: 3;
   font-size: 19px;
   color: #ffffff;
 }
 
 .age-rating {
-  z-index: 1;
+  z-index: 3;
   background: #383737;
   padding: 4px 8px;
   border-radius: 5px;
@@ -61,20 +61,20 @@ body {
 
 .movie-description {
   margin-top: 10px;
-  z-index: 1;
+  z-index: 3;
   font-size: 16px;
   line-height: 1.5;
 }
 
 .movie-genres span {
-  z-index: 1;
+  z-index: 3;
   color: #ffffff;
   font-weight: bold;
 }
 
 .language-options {
   margin: 15px 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .language-btn {
@@ -82,7 +82,7 @@ body {
   border: none;
   padding: 8px 12px;
   margin-right: 5px;
-  z-index: 1;
+  z-index: 3;
   color: white;
   border-radius: 10px;
   cursor: pointer;
@@ -90,12 +90,12 @@ body {
 
 .language-btn.active {
   background: white;
-  z-index: 1;
+  z-index: 3;
   color: black;
 }
 
 .subscribe-btn {
-  z-index: 1;
+  z-index: 3;
   background: linear-gradient(to right, #6241ff, #ff40a1);
   border: none;
   color: rgb(255, 255, 255);
@@ -114,7 +114,7 @@ body {
   position: fixed;
   background-color: ;
   height: 100vh;
-  z-index: 1;
+  z-index: 3;
   padding: 10px;
   text-align: left;
   margin: 0px 0px 0px 5px;
@@ -155,12 +155,17 @@ body {
   display: flex;
 }
 .more-like-this {
-  color: #aba5a5;
+  color: #d5cdcd;
   margin: 30px 0px 40px 100px;
 }
+.title-left a {
+  text-decoration: none;
+}
 .trailers {
+  color: #d5cdcd;
   margin: 30px 10px 5px 100px;
 }
+
 .card img {
   height: 240px;
   border-radius: 10px;
